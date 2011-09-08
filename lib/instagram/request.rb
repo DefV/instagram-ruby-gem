@@ -32,7 +32,7 @@ module Instagram
           request.url(path, options)
         when :post, :put
           request.path = path
-          request.body = options unless options.empty?
+          request.body = options unless options.nil?
         end
       end
       raw ? response : response.body
