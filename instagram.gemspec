@@ -9,24 +9,13 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('faraday_middleware', '>= 0.3.1')
   s.add_runtime_dependency('multi_json', '>= 0.0.5')
   s.add_runtime_dependency('hashie',  '>= 0.4.0')
-  s.authors = ["Shayne Sweeney"]
-  s.description = %q{A Ruby wrapper for the Instagram REST and Search APIs}
-  s.post_install_message =<<eos
-********************************************************************************
-
-  Follow @instagram on Twitter for announcements, updates, and news.
-  https://twitter.com/instagramapi
-
-  Join the mailing list!
-  https://groups.google.com/group/instagram-ruby-gem
-
-********************************************************************************
-eos
-  s.email = ['shayne@instagr.am']
+  s.authors = ["Shayne Sweeney, Nate Westheimer"]
+  s.description = %q{A Ruby wrapper for the Instagram REST and Search APIs - adapted poorly but workingly by innonate.}
+  s.email = ['nate@innonate.com']
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split("\n")
-  s.homepage = 'https://github.com/Instagram/instagramrb'
-  s.name = 'instagram'
+  s.homepage = 'https://github.com/innonate/instagram-ruby-gem/'
+  s.name = 'instagram-innonate'
   s.platform = Gem::Platform::RUBY
   s.require_paths = ['lib']
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6') if s.respond_to? :required_rubygems_version=

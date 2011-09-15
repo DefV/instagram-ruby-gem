@@ -1,11 +1,11 @@
-The Instagram Ruby Gem
+The Instagram Ruby Gem (adapted poorly but workingly by innonate - not the official gem!)
 ====================
 A Ruby wrapper for the Instagram REST and Search APIs
 
 
 Installation
 ------------
-	gem install instagram
+	gem install instagram-innonate
 
 
 Follow @instagramapi on Twitter
