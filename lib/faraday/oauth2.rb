@@ -20,7 +20,7 @@ module Faraday
           env[:body] = env[:body].merge(:access_token => @access_token)
           env[:request_headers] = env[:request_headers].merge('Authorization' => "Token token=\"#{@access_token}\"")
         elsif @client_id
-          env[:body] = env[:body] #.merge(:client_id => @client_id)
+          env[:body] = env[:body].merge(:client_id => @client_id)
         end
       end
 
